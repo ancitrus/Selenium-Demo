@@ -7,7 +7,8 @@ def test_guest_can_go_to_login_page(browser):
     """ Открываем страницу """
     page.open()
     """ Выполняем метод страницы """
-    page.go_to_login_page()
+    login_page = page.go_to_login_page()
+    login_page.should_be_login_page()
 
 
 # def go_to_login_page(browser):
