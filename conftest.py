@@ -10,8 +10,8 @@ def pytest_make_parametrize_id(config, val): return repr(val)
 def pytest_addoption(parser):
     parser.addoption('--browser_name',
                      action='store',
-                     default='safari',
-                     help='Choose browser: chrome of firefox')
+                     default='chrome',
+                     help='Choose browser: chrome, firefox or safari')
     parser.addoption('--language',
                      action='store',
                      default='en',
